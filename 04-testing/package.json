@@ -1,0 +1,17 @@
+{
+  "name": "04-testing",
+  "version": "1.0.0",
+  "description": "Babel Assignment",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test.js"
+  },
+  "author": "Brigitte Jellinek",
+  "license": "ISC"
+}
