@@ -1,19 +1,16 @@
 {
-  "name": "03-babel",
+  "name": "04-testing",
   "version": "1.0.0",
   "description": "Babel Assignment",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-preset-stage-2": "^6.24.1"
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0"
   },
   "scripts": {
-    "build": "mkdir -p dist && ./node_modules/.bin/babel src/index.js -d dist",
-    "start": "node dist/index.js"
+    "test": "mocha test.js"
   },
-  "author": "Lisi Linhart",
+  "author": "Brigitte Jellinek",
   "license": "ISC"
 }
