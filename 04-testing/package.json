@@ -9,6 +9,7 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "mocha test.js"
   },
   "author": "Brigitte Jellinek",
