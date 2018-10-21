@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Römische Zahlen - der Konverter</title>
+    <meta name="description" content="Rechne römlische Zahlen um">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body>
+    <h1>Konverter</h1>
+    <input name="input" id="input" placeholder="vii">
+    <div id="output"></div>
+
+
+    <footer>
+        Photo by <a href="https://unsplash.com/photos/abLJjz5M6Sc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mauricio
+            Artieda on Unsplash</a>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>
