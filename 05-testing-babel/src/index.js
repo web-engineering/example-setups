@@ -1,6 +1,5 @@
 // Hook up the conversion to input and ouput
-
-import "./style.scss";
+import './style.css';
 
 import { validRomanChar, romanToNumber } from "./roman.js";
 

@@ -6,7 +6,6 @@ html {
   height: 100vh;
   box-sizing: border-box;
 }
-
 body {
   text-align: center;
   display: flex;
@@ -14,7 +13,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 input {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   text-align: center;
@@ -24,11 +22,9 @@ input {
   font-size: 72px;
   flex: 1;
 }
-
 input::placeholder {
   color: gray;
 }
-
 #output {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   text-align: center;
@@ -37,18 +33,15 @@ input::placeholder {
   font-size: 72px;
   flex: 5;
 }
-
 .error#output {
   background-color: rgba(255, 0, 0, 0.5);
 }
-
 footer {
   height: 17px;
   background-color: black;
   color: white;
   font-size: 8px;
 }
-
 footer :any-link {
   color: white;
 }

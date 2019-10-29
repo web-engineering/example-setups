@@ -14,16 +14,11 @@ module.exports = {
   },
   module: {
     rules: [
-      // use sass
+      // css
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ]
-      },
+        test:/\.css$/,
+        use:['style-loader','css-loader']
+      },      
       // use babel for all js files
       {
         test: /\.js$/,
