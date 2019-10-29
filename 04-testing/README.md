@@ -16,11 +16,11 @@ to run index.js with node.
 
 To test the package there are some test cases in test.js. first run
 
-   npm install
+    npm install
 
 to install mocha, and then run
 
-   npm run test
+    npm run test
 
 to run the tests.
 
