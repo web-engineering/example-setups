@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "babel-register": "^6.26.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "lodash": ">=4.17.13"
   },
   "scripts": {
     "start": "node index.js",

@@ -1,54 +1,54 @@
 var assert = require('assert');
 var roman = require('./roman.js');
-var wert_der_römischen_zahl = roman.wert_der_römischen_zahl;
+var romanToNumber = roman.romanToNumber;
 
-describe('einfache römische Zahlen', () => {
-  it('kann i umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('i'), 1);
+describe('simple roman numbers', () => {
+  it('can convert i', () => {
+    assert.equal(romanToNumber('i'), 1);
   });
-  
-  it('kann mehrere i umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('ii'), 2);
-    assert.equal(wert_der_römischen_zahl('iii'), 3);
-  });  
 
-  it('kann v umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('v'), 5);
+  it('can convert several letters i', () => {
+    assert.equal(romanToNumber('ii'), 2);
+    assert.equal(romanToNumber('iii'), 3);
   });
-  
-  it('kann x umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('x'), 10);
-  });
-  
-  it('kann mehrere x umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('xx'), 20);
-    assert.equal(wert_der_römischen_zahl('xxx'), 30);
-  });  
 
-  it('kann l umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('l'), 50);
+  it('can convert v', () => {
+    assert.equal(romanToNumber('v'), 5);
   });
-  
-  it('kann mehrere c umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('c'), 100);
-    assert.equal(wert_der_römischen_zahl('cc'), 200);
-    assert.equal(wert_der_römischen_zahl('ccc'), 300);
-  });  
-  it('kann d umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('d'), 500);
+
+  it('can convert x', () => {
+    assert.equal(romanToNumber('x'), 10);
   });
-  
-  it('kann mehrere m umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('m'), 1000);
-    assert.equal(wert_der_römischen_zahl('mm'), 2000);
-    assert.equal(wert_der_römischen_zahl('mmm'), 3000);
-  });  
+
+  it('can convert several letters x', () => {
+    assert.equal(romanToNumber('xx'), 20);
+    assert.equal(romanToNumber('xxx'), 30);
+  });
+
+  it('can convert l', () => {
+    assert.equal(romanToNumber('l'), 50);
+  });
+
+  it('can convert several letters c', () => {
+    assert.equal(romanToNumber('c'), 100);
+    assert.equal(romanToNumber('cc'), 200);
+    assert.equal(romanToNumber('ccc'), 300);
+  });
+  it('can convert d', () => {
+    assert.equal(romanToNumber('d'), 500);
+  });
+
+  it('can convert several letters m', () => {
+    assert.equal(romanToNumber('m'), 1000);
+    assert.equal(romanToNumber('mm'), 2000);
+    assert.equal(romanToNumber('mmm'), 3000);
+  });
 });
-describe('römische Zahlen mit abzählen', () => {
-  it('kann iv umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('iv'), 4);
+describe('roman numbers with subtraction', () => {
+  it('can convert iv', () => {
+    assert.equal(romanToNumber('iv'), 4);
   });
-  it('kann birigttes geburtsjahr umrechnen', () => {
-    assert.equal(wert_der_römischen_zahl('mcmlxxi'), 1971);
+  it('can convert an important year in the 20th century', () => {
+    assert.equal(romanToNumber('mcmlxxi'), 1971);
   });
 });
