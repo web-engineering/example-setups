@@ -1,54 +1,54 @@
 import { describe, before, it } from 'mocha';
 import assert from 'assert';
-import { romanToNumber } from '../src /roman.js';
+import { romanToNumber } from '../src/roman.js';
 
-describe('einfache römische Zahlen', () => {
-  it('kann i umrechnen', () => {
+describe('simple roman numbers', () => {
+  it('can convert i', () => {
     assert.equal(romanToNumber('i'), 1);
   });
 
-  it('kann mehrere i umrechnen', () => {
+  it('can convert several letters i', () => {
     assert.equal(romanToNumber('ii'), 2);
     assert.equal(romanToNumber('iii'), 3);
   });
 
-  it('kann v umrechnen', () => {
+  it('can convert v', () => {
     assert.equal(romanToNumber('v'), 5);
   });
 
-  it('kann x umrechnen', () => {
+  it('can convert x', () => {
     assert.equal(romanToNumber('x'), 10);
   });
 
-  it('kann mehrere x umrechnen', () => {
+  it('can convert several letters x', () => {
     assert.equal(romanToNumber('xx'), 20);
     assert.equal(romanToNumber('xxx'), 30);
   });
 
-  it('kann l umrechnen', () => {
+  it('can convert l', () => {
     assert.equal(romanToNumber('l'), 50);
   });
 
-  it('kann mehrere c umrechnen', () => {
+  it('can convert several letters c', () => {
     assert.equal(romanToNumber('c'), 100);
     assert.equal(romanToNumber('cc'), 200);
     assert.equal(romanToNumber('ccc'), 300);
   });
-  it('kann d umrechnen', () => {
+  it('can convert d', () => {
     assert.equal(romanToNumber('d'), 500);
   });
 
-  it('kann mehrere m umrechnen', () => {
+  it('can convert several letters m', () => {
     assert.equal(romanToNumber('m'), 1000);
     assert.equal(romanToNumber('mm'), 2000);
     assert.equal(romanToNumber('mmm'), 3000);
   });
 });
-describe('römische Zahlen mit abzählen', () => {
-  it('kann iv umrechnen', () => {
+describe('roman numbers with subtraction', () => {
+  it('can convert iv', () => {
     assert.equal(romanToNumber('iv'), 4);
   });
-  it('kann birigttes geburtsjahr umrechnen', () => {
+  it('can convert an important year in the 20th century', () => {
     assert.equal(romanToNumber('mcmlxxi'), 1971);
   });
 });

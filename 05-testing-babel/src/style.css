@@ -6,6 +6,22 @@ html {
   height: 100vh;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 800px) and (max-device-pixel-ratio: 1) {
+  html {
+    background-image: url(images/background-800.jpg);
+  }
+}
+@media only screen and (max-width: 532px) and (max-device-pixel-ratio: 1.5) {
+  html {
+    background-image: url(images/background-800.jpg);
+  }
+}
+@media only screen and (max-width: 400px) and (max-device-pixel-ratio: 2) {
+  html {
+    background-image: url(images/background-800.jpg);
+  }
+}
+
 body {
   text-align: center;
   display: flex;
@@ -44,4 +60,7 @@ footer {
 }
 footer :any-link {
   color: white;
+}
+label[for=input] {
+  opacity:0;
 }
