@@ -1,4 +1,4 @@
-import assert from 'assert';
+import { strict as assert } from 'assert';
 import { fizzbuzz } from './fizzbuzz.js';
 import { diamond } from './diamond.js';
 
