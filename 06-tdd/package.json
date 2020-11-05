@@ -1,0 +1,17 @@
+{
+  "name": "06-tdd-katas",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Two Katas for getting into Test Driven Development",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test.js"
+  },
+  "author": "Brigitte Jellinek",
+  "license": "ISC"
+}
